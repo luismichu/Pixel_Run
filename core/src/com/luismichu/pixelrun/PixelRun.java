@@ -12,10 +12,6 @@ public class PixelRun extends Game {
 
     @Override
     public void create() {
-        //db.drop();
-        for(Score score : db.leer()){
-            Gdx.app.log("db", score.name + ": " + score.score);
-        }
         setScreen(new MainMenu(this, null, true));
     }
 }

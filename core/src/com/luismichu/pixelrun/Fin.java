@@ -78,7 +78,6 @@ public class Fin implements Screen {
             public void clicked(InputEvent event, float x, float y) {
                 if(!txtNombre.getText().equals("")){
                     score.name = txtNombre.getText();
-                    Gdx.app.log("score", score.name);
                     PixelRun.db.insertar(score);
                     resultados();
                 }
