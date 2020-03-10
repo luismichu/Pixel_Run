@@ -38,7 +38,7 @@ public class Asteroide {
     }
 
     public void initPos(){
-        pos = new Vector2((float)(Math.random() * MainMenu.BWIDTH), MainMenu.BHEIGHT * 1.25f);
+        pos = new Vector2((float)(Math.random() * (MainMenu.BWIDTH - width)), MainMenu.BHEIGHT * 1.25f);
     }
 
     public void draw(SpriteBatch batch){
