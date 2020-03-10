@@ -2,7 +2,6 @@ package com.luismichu.pixelrun;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
-import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -13,11 +12,9 @@ import com.badlogic.gdx.utils.Array;
 
 
 public class Explosion {
-    private Texture imagen;
     private Animation<TextureRegion> animacion;
     private Vector2 pos;
     private float elapsedTime;
-    private final int W = 118, H = 83;
 
     Explosion(String ruta, Vector2 pos){
         initImage(ruta);
@@ -39,7 +36,7 @@ public class Explosion {
                 0, pMap.getHeight() / 4 + 2, pMap.getWidth(), pMap.getHeight() / 4,
                 0, 0, pMapReescalado.getWidth(), pMapReescalado.getHeight()
         );
-        imagen = new Texture(pMapReescalado);
+        Texture imagen = new Texture(pMapReescalado);
         pMap.dispose();
         pMapReescalado.dispose();
         Array<TextureRegion> regiones = new Array<>();

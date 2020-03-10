@@ -3,7 +3,6 @@ package com.luismichu.pixelrun;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
@@ -15,8 +14,6 @@ import static com.badlogic.gdx.graphics.GL20.GL_COLOR_BUFFER_BIT;
 
 public class Fin implements Screen {
     private Score score;
-    private SpriteBatch batch;
-    private OrthographicCamera camera;
     private FitViewport viewport;
     private Stage stage;
     private Skin skin;
@@ -28,9 +25,7 @@ public class Fin implements Screen {
     }
     @Override
     public void show() {
-        batch = new SpriteBatch();
-
-        camera = new OrthographicCamera();
+        OrthographicCamera camera = new OrthographicCamera();
         camera.position.set(MainMenu.BWIDTH / 2f, MainMenu.BHEIGHT / 2f, 0);
         camera.update();
         viewport = new FitViewport(MainMenu.BWIDTH, MainMenu.BHEIGHT, camera);
@@ -57,12 +52,12 @@ public class Fin implements Screen {
         table.align(Align.center | Align.top);
 
         table.setPosition(0, MainMenu.BHEIGHT);
-        Label lblFin = new Label("Fin de la partida",skin);
+        Label lblFin = new Label("Fin de la partida", skin);
         lblFin.setFontScale(2.5f);
-        Label lblScore = new Label("Score: " + String.valueOf(score.score),skin);
+        Label lblScore = new Label("Score: " + score.score, skin);
         lblScore.setFontScale(1.5f);
-        final TextField txtNombre = new TextField("",skin);
-        TextButton btGuardar = new TextButton("Guardar",skin);
+        final TextField txtNombre = new TextField("", skin);
+        TextButton btGuardar = new TextButton("Guardar", skin);
         btGuardar.getLabel().setFontScale(1.5f);
 
         table.padTop(280);
@@ -83,6 +78,7 @@ public class Fin implements Screen {
             public void clicked(InputEvent event, float x, float y) {
                 if(!txtNombre.getText().equals("")){
                     score.name = txtNombre.getText();
+                    Gdx.app.log("score", score.name);
                     PixelRun.db.insertar(score);
                     resultados();
                 }

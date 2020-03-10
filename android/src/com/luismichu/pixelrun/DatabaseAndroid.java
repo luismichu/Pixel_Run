@@ -5,9 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.database.sqlite.SQLiteStatement;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
-
 
 import java.sql.PreparedStatement;
 
@@ -38,23 +37,26 @@ public class DatabaseAndroid extends Database{
         String sql = "CREATE TABLE IF NOT EXISTS scores (id integer primary key autoincrement, name text, score int)";
         db.execSQL(sql);
 
+        Object[] argumentos = new Object[]{"null", score.name, score.score};
+        //db.execSQL("INSERT INTO scores values(?, ?, ?)", argumentos);
         ContentValues v = new ContentValues();
         v.put("name", score.name);
         v.put("score", score.score);
-        db.insertOrThrow("scores", null, v);
+        db.insert("scores", null, v);
     }
 
     @Override
     Array<Score> leer() {
         String[] SELECT = {"name", "score"};
         Cursor cursor = db.query("scores", SELECT, null, null, null, null,
-                "score", "5");
+                "score desc");
 
         Array<Score> scores = new Array<>();
-        Score score = new Score();
         while (cursor.moveToNext()) {
+            Score score = new Score();
             score.name = cursor.getString(0);
             score.score = cursor.getInt(1);
+
             scores.add(score);
         }
         cursor.close();

@@ -1,7 +1,6 @@
 package com.luismichu.pixelrun;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -14,20 +13,21 @@ public class Asteroide {
     private Animation<TextureAtlas.AtlasRegion> animacion;
     private Vector2 pos;
     private float elapsedTime;
-    private int velocidad, width, height, lastWidth, lastHeight;
-    private final int W = 128, H = 128;
+    private int velocidad;
+    private int width;
+    private int height;
     private Rectangle rect;
 
     Asteroide(String ruta){
-        velocidad = (int)(Math.random() * 130) + 50;
+        velocidad = (int)(Math.random() * 100) + 150;
 
         TextureAtlas asteroides = new TextureAtlas(Gdx.files.internal(ruta));
         Array<TextureAtlas.AtlasRegion> arrayAsteroides = new Array<>();
         for(int i=0;i<10;i++)
-            arrayAsteroides.add(asteroides.findRegion("Asteroid-A-10-0" + String.valueOf(i)));
+            arrayAsteroides.add(asteroides.findRegion("Asteroid-A-10-0" + i));
         for(int i=10;i<60;i++)
-            arrayAsteroides.add(asteroides.findRegion("Asteroid-A-10-" + String.valueOf(i)));
-        animacion = new Animation<>((200 - velocidad) / 1000f, arrayAsteroides, Animation.PlayMode.LOOP);
+            arrayAsteroides.add(asteroides.findRegion("Asteroid-A-10-" + i));
+        animacion = new Animation<>((260 - velocidad) / 1000f, arrayAsteroides, Animation.PlayMode.LOOP);
 
         elapsedTime = 0;
         width = animacion.getKeyFrame(elapsedTime).getRegionWidth();
@@ -42,8 +42,8 @@ public class Asteroide {
     }
 
     public void draw(SpriteBatch batch){
-        lastWidth = width;
-        lastHeight = height;
+        int lastWidth = width;
+        int lastHeight = height;
 
         TextureRegion t = animacion.getKeyFrame(elapsedTime);
 

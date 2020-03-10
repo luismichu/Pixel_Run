@@ -60,7 +60,7 @@ public class MainGame implements InputProcessor, Screen {
 			backgroundFlipped = new Texture("img/spacefieldFlipped.png");
 			jugador = new Nave("img/ships/ship1.png", new Vector2(BWIDTH / 2f, 150));
 			asteroides = new Array<>();
-			for (int i = 0; i < 10; i++)
+			for (int i = 0; i < 15; i++)
 				asteroides.add(new Asteroide("img/asteroides/asteroides.atlas"));
 
 			sRender = new ShapeRenderer();
@@ -149,7 +149,7 @@ public class MainGame implements InputProcessor, Screen {
 
 		pb.setValue(jugador.getVidas());
 		lbl.setText(String.valueOf(puntuacion));
-		offset -= 35 * Gdx.graphics.getDeltaTime();
+		offset -= 45 * Gdx.graphics.getDeltaTime();
 		if(offset < -background.getHeight() * 2)
 			offset = 0;
 	}
