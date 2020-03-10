@@ -19,7 +19,7 @@ public class Asteroide {
     private Rectangle rect;
 
     Asteroide(String ruta){
-        velocidad = (int)(Math.random() * 100) + 50;
+        velocidad = (int)(Math.random() * 130) + 50;
 
         TextureAtlas asteroides = new TextureAtlas(Gdx.files.internal(ruta));
         Array<TextureAtlas.AtlasRegion> arrayAsteroides = new Array<>();

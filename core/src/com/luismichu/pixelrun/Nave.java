@@ -130,7 +130,7 @@ class Disparo{
 
         Preferences prefs = Gdx.app.getPreferences("myPrefs");
         if(prefs.getBoolean("music"))
-            Gdx.audio.newSound(Gdx.files.internal("sound/laser.wav")).play(prefs.getFloat("volume"));
+            MainGame.laser.play(prefs.getFloat("volume"));
     }
 
     public void draw(SpriteBatch batch){

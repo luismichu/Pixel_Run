@@ -2,6 +2,7 @@ package com.luismichu.pixelrun;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -24,12 +25,13 @@ public class Explosion {
         elapsedTime = 0;
 
         Preferences prefs = Gdx.app.getPreferences("myPrefs");
-        if(prefs.getBoolean("music"))
-            Gdx.audio.newSound(Gdx.files.internal("sound/explosion.mp3")).play(prefs.getFloat("volume") + 0.1f);
+        if(prefs.getBoolean("music")) {
+            MainGame.explosion.play(prefs.getFloat("volume") + 0.1f);
+        }
     }
 
     private void initImage(String ruta){
-        float tam = 4.5f;
+        float tam = 7.5f;
         Pixmap pMap = new Pixmap(Gdx.files.internal(ruta));
         Pixmap pMapReescalado = new Pixmap((int)(tam * pMap.getWidth()), (int)(tam * pMap.getHeight() / 4), pMap.getFormat());
         pMapReescalado.setFilter(Pixmap.Filter.NearestNeighbour);

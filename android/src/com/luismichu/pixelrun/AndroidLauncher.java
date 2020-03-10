@@ -10,6 +10,6 @@ public class AndroidLauncher extends AndroidApplication {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 		config.useImmersiveMode = true;
-		initialize(new PixelRun(), config);
+		initialize(new PixelRun(new DatabaseAndroid(this.getBaseContext())), config);
 	}
 }

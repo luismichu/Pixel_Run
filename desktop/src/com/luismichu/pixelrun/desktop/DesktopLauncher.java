@@ -2,6 +2,7 @@ package com.luismichu.pixelrun.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.luismichu.pixelrun.DatabaseDesktop;
 import com.luismichu.pixelrun.PixelRun;
 
 public class DesktopLauncher {
@@ -12,6 +13,6 @@ public class DesktopLauncher {
 		config.width = 365;
 		config.height = 650;
 		//config.fullscreen = true;
-		new LwjglApplication(new PixelRun(), config);
+		new LwjglApplication(new PixelRun(new DatabaseDesktop()), config);
 	}
 }

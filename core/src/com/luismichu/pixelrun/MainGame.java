@@ -2,6 +2,7 @@ package com.luismichu.pixelrun;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -38,6 +39,7 @@ public class MainGame implements InputProcessor, Screen {
 	private int puntuacion;
 	private float offset;
 	private Music pxRunMusic;
+	public static Sound explosion, laser;
 
 	MainGame(PixelRun pixelRun){
 		this.pixelRun = pixelRun;
@@ -82,6 +84,9 @@ public class MainGame implements InputProcessor, Screen {
 
 			puntuacion = 0;
 			offset = 0;
+
+			explosion = Gdx.audio.newSound(Gdx.files.internal("sound/explosion.mp3"));
+			laser = Gdx.audio.newSound(Gdx.files.internal("sound/laser.wav"));
 		}
 		else
 			game();
@@ -187,7 +192,7 @@ public class MainGame implements InputProcessor, Screen {
 		}
 
 		if(!jugador.isAlive()) {
-			pixelRun.setScreen(new MainMenu(pixelRun, null, true));
+			pixelRun.setScreen(new Fin(pixelRun, puntuacion));
 			dispose();
 		}
 		else {
@@ -306,7 +311,7 @@ public class MainGame implements InputProcessor, Screen {
 
 	@Override
 	public void resume() {
-		gamePaused = false;
+		pauseMenu();
 	}
 
 	@Override

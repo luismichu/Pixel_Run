@@ -1,425 +1,425 @@
 asteroides.png
-size: 510, 812
+size: 500, 1910
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Linear,Linear
 repeat: none
 Asteroid-A-10-00
   rotate: false
-  xy: 0, 0
-  size: 80, 74
-  orig: 128, 128
-  offset: 18, 24
+  xy: 262, 520
+  size: 122, 113
+  orig: 192, 192
+  offset: 26, 35
   index: -1
 Asteroid-A-10-01
   rotate: false
-  xy: 80, 0
-  size: 78, 74
-  orig: 128, 128
-  offset: 18, 26
+  xy: 0, 633
+  size: 119, 113
+  orig: 192, 192
+  offset: 26, 38
   index: -1
 Asteroid-A-10-02
   rotate: false
-  xy: 158, 0
-  size: 76, 74
-  orig: 128, 128
-  offset: 18, 28
+  xy: 119, 633
+  size: 116, 113
+  orig: 192, 192
+  offset: 26, 41
   index: -1
 Asteroid-A-10-03
   rotate: false
-  xy: 234, 0
-  size: 74, 72
-  orig: 128, 128
-  offset: 18, 30
+  xy: 128, 410
+  size: 113, 110
+  orig: 192, 192
+  offset: 26, 44
   index: -1
 Asteroid-A-10-04
   rotate: false
-  xy: 308, 0
-  size: 70, 72
-  orig: 128, 128
-  offset: 20, 32
+  xy: 241, 410
+  size: 107, 110
+  orig: 192, 192
+  offset: 29, 47
   index: -1
 Asteroid-A-10-05
   rotate: false
-  xy: 378, 0
-  size: 68, 70
-  orig: 128, 128
-  offset: 20, 34
+  xy: 98, 303
+  size: 104, 107
+  orig: 192, 192
+  offset: 29, 50
   index: -1
 Asteroid-A-10-06
   rotate: false
-  xy: 0, 74
-  size: 68, 68
-  orig: 128, 128
-  offset: 20, 36
+  xy: 366, 199
+  size: 104, 104
+  orig: 192, 192
+  offset: 29, 53
   index: -1
 Asteroid-A-10-07
   rotate: false
-  xy: 68, 74
-  size: 66, 66
-  orig: 128, 128
-  offset: 20, 38
+  xy: 116, 98
+  size: 101, 101
+  orig: 192, 192
+  offset: 29, 56
   index: -1
 Asteroid-A-10-08
   rotate: false
-  xy: 134, 74
-  size: 66, 66
-  orig: 128, 128
-  offset: 20, 38
+  xy: 217, 98
+  size: 101, 101
+  orig: 192, 192
+  offset: 29, 56
   index: -1
 Asteroid-A-10-09
   rotate: false
-  xy: 200, 74
-  size: 66, 66
-  orig: 128, 128
-  offset: 20, 38
+  xy: 318, 98
+  size: 101, 101
+  orig: 192, 192
+  offset: 29, 56
   index: -1
 Asteroid-A-10-10
   rotate: false
-  xy: 266, 74
-  size: 64, 68
-  orig: 128, 128
-  offset: 20, 36
+  xy: 0, 303
+  size: 98, 104
+  orig: 192, 192
+  offset: 29, 53
   index: -1
 Asteroid-A-10-11
   rotate: false
-  xy: 330, 74
-  size: 64, 72
-  orig: 128, 128
-  offset: 20, 34
+  xy: 348, 410
+  size: 98, 110
+  orig: 192, 192
+  offset: 29, 50
   index: -1
 Asteroid-A-10-12
   rotate: false
-  xy: 394, 74
-  size: 62, 74
-  orig: 128, 128
-  offset: 20, 32
+  xy: 235, 633
+  size: 95, 113
+  orig: 192, 192
+  offset: 29, 47
   index: -1
 Asteroid-A-10-13
   rotate: false
-  xy: 0, 148
-  size: 62, 78
-  orig: 128, 128
-  offset: 20, 30
+  xy: 390, 975
+  size: 95, 119
+  orig: 192, 192
+  offset: 29, 44
   index: -1
 Asteroid-A-10-14
   rotate: false
-  xy: 62, 148
-  size: 64, 80
-  orig: 128, 128
-  offset: 20, 28
+  xy: 131, 1094
+  size: 98, 122
+  orig: 192, 192
+  offset: 29, 41
   index: -1
 Asteroid-A-10-15
   rotate: false
-  xy: 126, 148
-  size: 64, 80
-  orig: 128, 128
-  offset: 20, 28
+  xy: 229, 1094
+  size: 98, 122
+  orig: 192, 192
+  offset: 29, 41
   index: -1
 Asteroid-A-10-16
   rotate: false
-  xy: 190, 148
-  size: 64, 82
-  orig: 128, 128
-  offset: 20, 26
+  xy: 327, 1094
+  size: 98, 125
+  orig: 192, 192
+  offset: 29, 38
   index: -1
 Asteroid-A-10-17
   rotate: false
-  xy: 254, 148
-  size: 64, 84
-  orig: 128, 128
-  offset: 20, 24
+  xy: 265, 1219
+  size: 98, 128
+  orig: 192, 192
+  offset: 29, 35
   index: -1
 Asteroid-A-10-18
   rotate: false
-  xy: 318, 148
-  size: 64, 84
-  orig: 128, 128
-  offset: 20, 24
+  xy: 363, 1219
+  size: 98, 128
+  orig: 192, 192
+  offset: 29, 35
   index: -1
 Asteroid-A-10-19
   rotate: false
-  xy: 382, 148
-  size: 66, 86
-  orig: 128, 128
-  offset: 20, 22
+  xy: 0, 1347
+  size: 101, 131
+  orig: 192, 192
+  offset: 29, 32
   index: -1
 Asteroid-A-10-20
   rotate: false
-  xy: 0, 234
-  size: 66, 86
-  orig: 128, 128
-  offset: 20, 22
+  xy: 101, 1347
+  size: 101, 131
+  orig: 192, 192
+  offset: 29, 32
   index: -1
 Asteroid-A-10-21
   rotate: false
-  xy: 66, 234
-  size: 68, 88
-  orig: 128, 128
-  offset: 20, 22
+  xy: 336, 1347
+  size: 104, 134
+  orig: 192, 192
+  offset: 29, 32
   index: -1
 Asteroid-A-10-22
   rotate: false
-  xy: 134, 234
-  size: 72, 90
-  orig: 128, 128
-  offset: 18, 22
+  xy: 0, 1481
+  size: 110, 137
+  orig: 192, 192
+  offset: 26, 32
   index: -1
 Asteroid-A-10-23
   rotate: false
-  xy: 206, 234
-  size: 74, 92
-  orig: 128, 128
-  offset: 18, 22
+  xy: 110, 1481
+  size: 113, 140
+  orig: 192, 192
+  offset: 26, 32
   index: -1
 Asteroid-A-10-24
   rotate: false
-  xy: 280, 234
-  size: 78, 92
-  orig: 128, 128
-  offset: 16, 22
+  xy: 223, 1481
+  size: 119, 140
+  orig: 192, 192
+  offset: 23, 32
   index: -1
 Asteroid-A-10-25
   rotate: false
-  xy: 358, 234
-  size: 78, 94
-  orig: 128, 128
-  offset: 16, 22
+  xy: 256, 1621
+  size: 119, 143
+  orig: 192, 192
+  offset: 23, 32
   index: -1
 Asteroid-A-10-26
   rotate: false
-  xy: 0, 328
-  size: 82, 92
-  orig: 128, 128
-  offset: 14, 24
+  xy: 342, 1481
+  size: 125, 140
+  orig: 192, 192
+  offset: 20, 35
   index: -1
 Asteroid-A-10-27
   rotate: false
-  xy: 82, 328
-  size: 82, 92
-  orig: 128, 128
-  offset: 14, 24
+  xy: 0, 1621
+  size: 125, 140
+  orig: 192, 192
+  offset: 20, 35
   index: -1
 Asteroid-A-10-28
   rotate: false
-  xy: 164, 328
-  size: 82, 94
-  orig: 128, 128
-  offset: 14, 22
+  xy: 375, 1621
+  size: 125, 143
+  orig: 192, 192
+  offset: 20, 32
   index: -1
 Asteroid-A-10-29
   rotate: false
-  xy: 246, 328
-  size: 86, 96
-  orig: 128, 128
-  offset: 12, 20
+  xy: 262, 1764
+  size: 131, 146
+  orig: 192, 192
+  offset: 17, 29
   index: -1
 Asteroid-A-10-30
   rotate: false
-  xy: 332, 328
-  size: 86, 94
-  orig: 128, 128
-  offset: 12, 20
+  xy: 0, 1764
+  size: 131, 143
+  orig: 192, 192
+  offset: 17, 29
   index: -1
 Asteroid-A-10-31
   rotate: false
-  xy: 418, 328
-  size: 86, 94
-  orig: 128, 128
-  offset: 12, 20
+  xy: 131, 1764
+  size: 131, 143
+  orig: 192, 192
+  offset: 17, 29
   index: -1
 Asteroid-A-10-32
   rotate: false
-  xy: 0, 424
-  size: 86, 92
-  orig: 128, 128
-  offset: 14, 20
+  xy: 125, 1621
+  size: 131, 140
+  orig: 192, 192
+  offset: 20, 29
   index: -1
 Asteroid-A-10-33
   rotate: false
-  xy: 86, 424
-  size: 88, 86
-  orig: 128, 128
-  offset: 14, 22
+  xy: 202, 1347
+  size: 134, 131
+  orig: 192, 192
+  offset: 20, 32
   index: -1
 Asteroid-A-10-34
   rotate: false
-  xy: 174, 424
-  size: 86, 82
-  orig: 128, 128
-  offset: 16, 24
+  xy: 0, 1219
+  size: 131, 125
+  orig: 192, 192
+  offset: 23, 35
   index: -1
 Asteroid-A-10-35
   rotate: false
-  xy: 260, 424
-  size: 88, 82
-  orig: 128, 128
-  offset: 16, 22
+  xy: 131, 1219
+  size: 134, 125
+  orig: 192, 192
+  offset: 23, 32
   index: -1
 Asteroid-A-10-36
   rotate: false
-  xy: 348, 424
-  size: 86, 78
-  orig: 128, 128
-  offset: 18, 22
+  xy: 0, 1094
+  size: 131, 119
+  orig: 192, 192
+  offset: 26, 32
   index: -1
 Asteroid-A-10-37
   rotate: false
-  xy: 0, 516
-  size: 84, 76
-  orig: 128, 128
-  offset: 20, 22
+  xy: 256, 859
+  size: 128, 116
+  orig: 192, 192
+  offset: 29, 32
   index: -1
 Asteroid-A-10-38
   rotate: false
-  xy: 84, 516
-  size: 82, 74
-  orig: 128, 128
-  offset: 22, 20
+  xy: 330, 633
+  size: 125, 113
+  orig: 192, 192
+  offset: 32, 29
   index: -1
 Asteroid-A-10-39
   rotate: false
-  xy: 166, 516
-  size: 78, 70
-  orig: 128, 128
-  offset: 26, 20
+  xy: 202, 303
+  size: 119, 107
+  orig: 192, 192
+  offset: 38, 29
   index: -1
 Asteroid-A-10-40
   rotate: false
-  xy: 244, 516
-  size: 76, 64
-  orig: 128, 128
-  offset: 28, 20
+  xy: 0, 0
+  size: 116, 98
+  orig: 192, 192
+  offset: 41, 29
   index: -1
 Asteroid-A-10-41
   rotate: false
-  xy: 320, 516
-  size: 76, 64
-  orig: 128, 128
-  offset: 30, 20
+  xy: 116, 0
+  size: 116, 98
+  orig: 192, 192
+  offset: 44, 29
   index: -1
 Asteroid-A-10-42
   rotate: false
-  xy: 396, 516
-  size: 76, 64
-  orig: 128, 128
-  offset: 30, 20
+  xy: 232, 0
+  size: 116, 98
+  orig: 192, 192
+  offset: 44, 29
   index: -1
 Asteroid-A-10-43
   rotate: false
-  xy: 0, 592
-  size: 74, 64
-  orig: 128, 128
-  offset: 30, 18
+  xy: 348, 0
+  size: 113, 98
+  orig: 192, 192
+  offset: 44, 26
   index: -1
 Asteroid-A-10-44
   rotate: false
-  xy: 74, 592
-  size: 76, 64
-  orig: 128, 128
-  offset: 30, 18
+  xy: 0, 98
+  size: 116, 98
+  orig: 192, 192
+  offset: 44, 26
   index: -1
 Asteroid-A-10-45
   rotate: false
-  xy: 150, 592
-  size: 78, 66
-  orig: 128, 128
-  offset: 30, 16
+  xy: 0, 199
+  size: 119, 101
+  orig: 192, 192
+  offset: 44, 23
   index: -1
 Asteroid-A-10-46
   rotate: false
-  xy: 228, 592
-  size: 80, 66
-  orig: 128, 128
-  offset: 28, 16
+  xy: 119, 199
+  size: 122, 101
+  orig: 192, 192
+  offset: 41, 23
   index: -1
 Asteroid-A-10-47
   rotate: false
-  xy: 308, 592
-  size: 82, 66
-  orig: 128, 128
-  offset: 28, 16
+  xy: 241, 199
+  size: 125, 101
+  orig: 192, 192
+  offset: 41, 23
   index: -1
 Asteroid-A-10-48
   rotate: false
-  xy: 390, 592
-  size: 82, 70
-  orig: 128, 128
-  offset: 28, 14
+  xy: 321, 303
+  size: 125, 107
+  orig: 192, 192
+  offset: 41, 20
   index: -1
 Asteroid-A-10-49
   rotate: false
-  xy: 0, 662
-  size: 84, 70
-  orig: 128, 128
-  offset: 26, 14
+  xy: 0, 410
+  size: 128, 107
+  orig: 192, 192
+  offset: 38, 20
   index: -1
 Asteroid-A-10-50
   rotate: false
-  xy: 84, 662
-  size: 86, 72
-  orig: 128, 128
-  offset: 24, 12
+  xy: 0, 520
+  size: 131, 110
+  orig: 192, 192
+  offset: 35, 17
   index: -1
 Asteroid-A-10-51
   rotate: false
-  xy: 170, 662
-  size: 86, 72
-  orig: 128, 128
-  offset: 24, 12
+  xy: 131, 520
+  size: 131, 110
+  orig: 192, 192
+  offset: 35, 17
   index: -1
 Asteroid-A-10-52
   rotate: false
-  xy: 256, 662
-  size: 86, 74
-  orig: 128, 128
-  offset: 22, 12
+  xy: 0, 746
+  size: 131, 113
+  orig: 192, 192
+  offset: 32, 17
   index: -1
 Asteroid-A-10-53
   rotate: false
-  xy: 342, 662
-  size: 86, 74
-  orig: 128, 128
-  offset: 22, 14
+  xy: 131, 746
+  size: 131, 113
+  orig: 192, 192
+  offset: 32, 20
   index: -1
 Asteroid-A-10-54
   rotate: false
-  xy: 0, 736
-  size: 86, 74
-  orig: 128, 128
-  offset: 20, 14
+  xy: 262, 746
+  size: 131, 113
+  orig: 192, 192
+  offset: 29, 20
   index: -1
 Asteroid-A-10-55
   rotate: false
-  xy: 86, 736
-  size: 86, 74
-  orig: 128, 128
-  offset: 20, 16
+  xy: 0, 859
+  size: 131, 113
+  orig: 192, 192
+  offset: 29, 23
   index: -1
 Asteroid-A-10-56
   rotate: false
-  xy: 172, 736
-  size: 86, 76
-  orig: 128, 128
-  offset: 18, 16
+  xy: 0, 975
+  size: 131, 116
+  orig: 192, 192
+  offset: 26, 23
   index: -1
 Asteroid-A-10-57
   rotate: false
-  xy: 258, 736
-  size: 86, 76
-  orig: 128, 128
-  offset: 18, 18
+  xy: 131, 975
+  size: 131, 116
+  orig: 192, 192
+  offset: 26, 26
   index: -1
 Asteroid-A-10-58
   rotate: false
-  xy: 344, 736
-  size: 84, 76
-  orig: 128, 128
-  offset: 18, 20
+  xy: 262, 975
+  size: 128, 116
+  orig: 192, 192
+  offset: 26, 29
   index: -1
 Asteroid-A-10-59
   rotate: false
-  xy: 428, 736
-  size: 82, 74
-  orig: 128, 128
-  offset: 18, 22
+  xy: 131, 859
+  size: 125, 113
+  orig: 192, 192
+  offset: 26, 32
   index: -1
